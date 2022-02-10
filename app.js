@@ -8,9 +8,11 @@ async function fetchGames() {
     console.log('hello', games);
 
     for (let game of games) {
+        console.log('game', game);
         const gameEl = renderGameCard(game);
 
         gameCardContainer.append(gameEl);
     }
+    return gameCardContainer;
 }
 fetchGames();
