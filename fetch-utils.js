@@ -4,12 +4,12 @@ const SUPABASE_KEY =
 
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
+export async function getGames() {
+    const resp = await client.from('game_ratings').select('*');
+    // console.log('hello',resp)
+    return checkError(resp);
+}
+// console.log(await getGames())
 function checkError({ data, error }) {
     return error ? console.error(error) : data;
 }
-
-// export async function getGames() {
-//     const resp = await client.from('Game-Ratings').select('*');
-//     console.log('hello');
-//     return checkError(resp);
-// }

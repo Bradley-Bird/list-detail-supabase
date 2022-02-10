@@ -1,8 +1,9 @@
-body{
+body {
     background: url(../assets/background-main.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
+
 .halo-3-img {
     width: 15rem;
 }
@@ -41,10 +42,12 @@ body{
     color: rgb(179, 170, 170);
     height: 3em;
 }
+
 .link>a {
     color: rgb(179, 170, 170);
 }
-.link>a:hover{
+
+.link>a:hover {
     color: black;
 }
 
@@ -95,15 +98,16 @@ li {
     justify-content: center;
     align-items: center;
 } */
-
-.main {
-    display: grid;
-    grid-template-columns: repeat(1fr);
-    /* gap: 10em; */
-    grid-template-areas:
-        'halo diablo borderlands';
-    content: contain;
-    justify-content: center;
+@media (min-width: 800px) {
+    .main {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        /* gap: 10em; */
+        grid-template-areas:
+            'halo diablo borderlands';
+        content: contain;
+        justify-content: center;
+    }
 }
 
 
@@ -111,7 +115,7 @@ li {
     grid-area: halo;
 }
 
-.diablo-3{
+.diablo-3 {
     grid-area: diablo;
 }
 
