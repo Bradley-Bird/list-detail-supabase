@@ -1,20 +1,20 @@
-import { renderGameCard } from "../render.utils.js";
+import { renderGameCard } from '../render.utils.js';
 
 const test = QUnit.test;
 
 test('should return li with div and image/classes', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = `<li class="dropdown halo"><span class="link">Halo 3</span><div class="dropdown-img"><img class="halo-img" src="./assets/halo-3-main.png" alt=""></div></li>`;
-    
-    //Act 
+    const expected = `<li class="dropdown , halo-3"><span class="link"><a href="/games/?id=1">halo-3</a></span><div class="dropdown-img"><img src="./assets/halo-3-main.png" class="halo-3-img"></div></li>`;
+
+    //Act
     // Call the function you're testing and set the result to a const
     const actual = renderGameCard({
-        game: 'Halo 3',
-        home_page_image: '/assets/halo-3-main.png',
+        id: '1',
+        game: 'halo-3',
+        home_page_image: './assets/halo-3-main.png',
     });
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    //Expect what is expected versus the actual result
+    expect.deepEqual(actual.outerHTML, expected);
 });

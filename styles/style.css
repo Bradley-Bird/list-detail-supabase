@@ -3,15 +3,15 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
-.halo-img {
+.halo-3-img {
     width: 15rem;
 }
 
-.borderlands-img {
+.borderlands-3-img {
     width: 15rem;
 }
 
-.diablo-img {
+.diablo-3-img {
     width: 15rem;
 }
 
@@ -40,7 +40,12 @@ body{
     font-family: 'Courier New', Courier, monospace;
     color: rgb(179, 170, 170);
     height: 3em;
-
+}
+.link>a {
+    color: rgb(179, 170, 170);
+}
+.link>a:hover{
+    color: black;
 }
 
 .dropdown-img {
@@ -102,15 +107,15 @@ li {
 }
 
 
-.halo {
+.halo-3 {
     grid-area: halo;
 }
 
-.diablo {
+.diablo-3{
     grid-area: diablo;
 }
 
-.borderlands {
+.borderlands-3 {
     grid-area: borderlands;
 }
 
