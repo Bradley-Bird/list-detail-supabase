@@ -123,15 +123,3 @@
     background-position: left;
     background-attachment: fixed;
 }
-
-.bg-image3 {
-    background: url(../assets/halo-3-background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0);
-    background-position: top right;
-}
-
-.bg-image4 {
-    background: url(../assets/Borderlands-3-background.jpg);
-}

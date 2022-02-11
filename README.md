@@ -1,4 +1,5 @@
-## The Golden Rule: 
+## The Golden Rule:
+
 Photo by Alex Urezkov from Pexels
 
 🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁

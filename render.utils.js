@@ -12,7 +12,7 @@ export function renderGameCard(games) {
     img.classList.add(`${games.game}-img`);
     a.href = `/games/?id=${games.id}`;
     div.classList.add('dropdown-img');
-    console.log('render', games);
+    // console.log('render', games);
     span.append(a);
     div.append(img);
     li.append(span, div);
