@@ -39,9 +39,41 @@ export function renderFocusGame(game) {
     divContainer.classList.add('container');
     divContainer.classList.add(`bg${game.id}-image2`);
 
-    divHeader.classList.add('game-header')
-    divHeader.classList.add(`bg${game.id}-image2`)
+    divHeader.classList.add('game-header');
+    divHeader.classList.add(`bg${game.id}-image2`);
+    divHeader.textContent = `${game.game}`.toUpperCase();
 
+    divMeta.classList.add(`meta-rating`);
+    divMeta.classList.add(`bg${game.id}-image`);
+
+    divMetaName.classList.add(`meta-name`);
+    divMetaName.textContent = `META-CRITIC`;
+
+    divMetaRating.classList.add(`rating1`);
+    divMetaRating.textContent = `${game.metacritic_rating}`;
+
+    divIgn.classList.add('ign-rating');
+    divIgn.classList.add(`bg${game.id}-image2`);
+
+    divIgnName.classList.add('ign-name');
+    divIgnName.textContent = `IGN`;
+
+    divIgnRating.classList.add('rating');
+    divIgnRating.textContent = `${game.ign_rating}`;
+
+    divIframe.classList.add('iframes');
+
+    iFrame.classList.add('responsive-iframe');
+    iFrame.width = `1258`;
+    iFrame.height = '708';
+    iFrame.src = `${game.iframes}`;
+    iFrame.title = `YouTube video player`;
+    iFrame.allow = `accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture`;
+    iFrame.allowFullscreen = 'yes';
+
+    divDescription.classList.add('description');
+    h2.textContent = `About game`;
+    p.textContent = `${game.game_description}`;
 
     divMeta.append(divMetaName, divMetaRating);
     divIgn.append(divIgnName, divIgnRating);
