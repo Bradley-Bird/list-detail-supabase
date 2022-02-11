@@ -20,4 +20,6 @@ console.log('render',games)
     return li;
 }
 
-
+export function renderFocusGame(){
+    
+}
