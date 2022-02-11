@@ -102,11 +102,11 @@
     padding: 3em;
     text-align: center;
     border: 2px black solid;
-    background-color: rgba(153, 27, 27,.5);
+    background-color: rgba(153, 27, 27, .5);
 
 }
 
-.bg-image {
+.bg2-image {
     background: url(../assets/diablo-3-background.jpg);
     background-size: fill;
     background-repeat: no-repeat;
@@ -115,12 +115,12 @@
     /* background-attachment: fixed; */
 }
 
-.bg-image2 {
+.bg2-image2 {
     background: url(../assets/diablo-fixed.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(10, 10, 10);
-    background-position:  left;
+    background-position: left;
     background-attachment: fixed;
 }
 
