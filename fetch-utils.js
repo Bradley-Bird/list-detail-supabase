@@ -10,6 +10,18 @@ export async function getGames() {
     return checkError(resp);
 }
 // console.log(await getGames())
+
+export async function getFocusGame(id) {
+    const resp = await client
+        .from('game_ratings')
+        .select('*')
+        .eq('id', id)
+        .single();
+    // console.log('id', resp);
+    return checkError(resp);
+}
+// console.log(await getFocusGame(2));
+
 function checkError({ data, error }) {
     return error ? console.error(error) : data;
 }
