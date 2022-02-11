@@ -108,15 +108,50 @@
 
 .bg2-image {
     background: url(../assets/diablo-3-background.jpg);
-    background-size: fill;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-color: black);
-    background-position: top right;
-    /* background-attachment: fixed; */
+    background-color: black;
+    background-position: fill;
+
 }
 
 .bg2-image2 {
     background: url(../assets/diablo-fixed.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(10, 10, 10);
+    background-position: left;
+    background-attachment: fixed;
+}
+
+.bg1-image {
+    background: url(../assets/halo-3-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+
+}
+
+.bg1-image2 {
+    background: url(../assets/halo-fixed.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(10, 10, 10);
+    background-position: left 50% top 10%;
+    background-attachment: fixed;
+}
+
+.bg3-image {
+    background: url(../assets/Borderlands-3-background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: fill;
+
+}
+
+.bg3-image2 {
+    background: url(../assets/Borderlands-fixed.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(10, 10, 10);
