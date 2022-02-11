@@ -64,11 +64,11 @@ export function renderFocusGame(game) {
     divIframe.classList.add('iframes');
 
     iFrame.classList.add('responsive-iframe');
-    iFrame.width = `1258`;
-    iFrame.height = '708';
+    // iFrame.width = `1258`;
+    // iFrame.height = '708';
     iFrame.src = `${game.iframes}`;
-    iFrame.title = `YouTube video player`;
-    iFrame.allow = `accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture`;
+    // iFrame.title = `YouTube video player`;
+    // iFrame.allow = `accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture`;
     // iFrame.allowFullscreen = 'yes';
 
     divDescription.classList.add('description');
