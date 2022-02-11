@@ -1,15 +1,23 @@
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1.2fr 1.2fr 2fr 0.5fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "game-header game-header game-header"
-        "meta-rating meta-rating meta-rating"
-        "ign-rating ign-rating ign-rating"
-        "iframes iframes description"
-        ". . .";
+body{
+    background-color: black;
+}
+@media (min-width: 900px) {
+
+
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr 1.2fr 1.2fr 2fr 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "game-header game-header game-header"
+            "meta-rating meta-rating meta-rating"
+            "ign-rating ign-rating ign-rating"
+            "iframes iframes description"
+            ". . .";
+    }
 }
 
 .game-header {
@@ -39,11 +47,13 @@
     align-items: center;
     text-align: center;
     border-bottom: 2px solid black;
+    contain: content;
 }
 
 .meta-name {
     grid-area: meta-name;
     color: rgb(182, 219, 59);
+    contain: content;
 }
 
 .rating1 {
@@ -108,10 +118,10 @@
 
 .bg2-image {
     background: url(../assets/diablo-3-background.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
-    background-position: fill;
+    background-attachment: local;
 
 }
 
