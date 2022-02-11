@@ -69,7 +69,7 @@ export function renderFocusGame(game) {
     iFrame.src = `${game.iframes}`;
     iFrame.title = `YouTube video player`;
     iFrame.allow = `accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture`;
-    iFrame.allowFullscreen = 'yes';
+    // iFrame.allowFullscreen = 'yes';
 
     divDescription.classList.add('description');
     h2.textContent = `About game`;
