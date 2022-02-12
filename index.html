@@ -10,41 +10,38 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>Lists</title>
 </head>
 
 <body>
     <header>
-        <div class="gutter-right logo">
-            <img src="assets/big-logo.png" />
-        </div>
+        <h1>3 ratings of 3 games that are the 3rd in the series</h1>
     </header>
-    <main class="auth-main">
-        <div class="left">
-            <div class="auth-container">
-                <form id="sign-in">
-                    <h3>Sign In</h3>
-                    <label>Email </label><input type="email" name="email" id="sign-in-email"/>
-                    <label>Password </label><input type="password" name="password" id="sign-in-password"/>
-                    <button>Submit</button>
-                </form>
-            </div>
-        </div>
-        <div class="right">
-            <div class="auth-container">
-                <form id='sign-up'>
-                    <h3>Sign Up</h3>
-                    <label>Email </label><input type='email' name='email' id="sign-up-email" />
-                    <label>Password </label><input type='password' name='password' id="sign-up-password" />
-                    <button>Submit</button>
-                </form>
-            </div>
-        </div>
+    <main class="main">
+        <ul class="main-ul">
+            <!-- <li class="dropdown halo-3">
+                <span class="link"><a href="/games/?id=1">halo-3</a></span>
+                <div class="dropdown-img">
+                    <img class="halo-3-img" src="./assets/halo-3-main.png" alt="">
+                </div>
+            </li>
+            <li class="dropdown diablo-3">
+                <span class="link">Diablo 3</span>
+                <div class="dropdown-img">
+                    <img class="diablo-3-img" src="./assets/diablo-3-main.png" alt="">
+                </div>
+            </li>
+            <li class="dropdown borderlands-3">
+                <span class="link">Borderlands 3</span>
+                <div class="dropdown-img">
+                    <img class="borderlands-3-img" src="./assets/Borderlands-3-main.png" alt="">
+                </div>
+            </li> -->
+        </ul>
     </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
-    </footer>
+    <footer></footer>
     <script type="module" src="./app.js"></script>
+    <script type="module" src="./fetch-utils.js"></script>
 </body>
 
 </html>

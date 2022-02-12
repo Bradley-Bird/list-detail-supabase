@@ -1,0 +1,172 @@
+body {
+    background-color: rgb(42, 38, 38);
+    font-family: 'Lato', sans-serif;
+}
+
+@media (min-width: 900px) {
+
+
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr 1.2fr 1.2fr 2fr 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "game-header game-header game-header"
+            "meta-rating meta-rating meta-rating"
+            "ign-rating ign-rating ign-rating"
+            "iframes iframes description"
+            ". . .";
+    }
+}
+
+.game-header {
+    grid-area: game-header;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid black;
+    color: red;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: .25em;
+}
+
+.meta-rating {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". meta-name ."
+        ". rating1 ."
+        ". . .";
+    grid-area: meta-rating;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid black;
+    contain: content;
+}
+
+.meta-name {
+    grid-area: meta-name;
+    color: rgb(182, 219, 59);
+    contain: content;
+}
+
+.rating1 {
+    grid-area: rating1;
+    color: rgb(100, 197, 197);
+    font-size: 1.5rem;
+}
+
+.ign-rating {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". ign-name ."
+        ". rating ."
+        ". . .";
+    grid-area: ign-rating;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.rating {
+    grid-area: rating;
+    color: rgb(182, 219, 59);
+}
+
+.ign-name {
+    grid-area: ign-name;
+    color: rgb(100, 197, 197);
+}
+
+.iframes {
+    grid-area: iframes;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    grid-area: description;
+    padding: 3em;
+    text-align: center;
+    border: 2px black solid;
+    background-color: rgba(153, 27, 27, .5);
+
+}
+
+.bg2-image {
+    background: url(../assets/diablo-3-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-attachment: local;
+
+}
+
+.bg2-image2 {
+    background: url(../assets/diablo-fixed.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(10, 10, 10);
+    background-position: left;
+    background-attachment: fixed;
+}
+
+.bg1-image {
+    background: url(../assets/halo-3-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+
+}
+
+.bg1-image2 {
+    background: url(../assets/halo-fixed.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(10, 10, 10);
+    background-position: left 50% top 10%;
+    background-attachment: fixed;
+}
+
+.bg3-image {
+    background: url(../assets/Borderlands-3-background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: fill;
+
+}
+
+.bg3-image2 {
+    background: url(../assets/Borderlands-fixed.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(10, 10, 10);
+    background-position: left;
+    background-attachment: fixed;
+}
