@@ -1,6 +1,8 @@
-body{
-    background-color: black;
+body {
+    background-color: rgb(42, 38, 38);
+    font-family: 'Lato', sans-serif;
 }
+
 @media (min-width: 900px) {
 
 

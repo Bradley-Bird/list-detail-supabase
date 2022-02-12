@@ -76,19 +76,22 @@ body {
     background-color: rgba(13, 4, 95, 0.1);
 }
 
-.main-ul {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-    /* align-items: center; */
+@media (min-width: 900px) {
 
-    /* display: grid;
+    .main-ul {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+        /* align-items: center; */
+
+        /* display: grid;
     grid-template-columns: repeat(1fr);
     /* gap: 10em; */
-    /* grid-template-areas:
+        /* grid-template-areas:
         'halo diablo borderlands';
     content: contain;
     justify-content: center; */
+    }
 }
 
 /* 
@@ -98,7 +101,7 @@ li {
     justify-content: center;
     align-items: center;
 } */
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     .main {
         display: grid;
         grid-template-columns: repeat(1fr);
@@ -108,8 +111,8 @@ li {
         content: contain;
         justify-content: center;
     }
-}
 
+}
 
 .halo-3 {
     grid-area: halo;
@@ -122,6 +125,9 @@ li {
 .borderlands-3 {
     grid-area: borderlands;
 }
+
+
+
 
 .dropdown {
     display: flex;
@@ -137,6 +143,7 @@ li {
     background-color: rgba(131, 127, 167, 0.5);
     box-shadow: 0 10px 5px 0 rgba(0, 0, 0, .2);
 }
+
 
 header {
     text-align: center;
